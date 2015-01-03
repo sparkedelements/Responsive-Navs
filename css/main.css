@@ -164,7 +164,9 @@ nav ul ul li:hover> a{
 	}
 	
 
-
+.pull {
+	display:none;
+	}
 
 
 
@@ -255,6 +257,13 @@ nav ul ul li:hover> a{
 	/* 768px */
     /* Style adjustments for viewports that meet the condition */
 	
+	
+		
+	nav ul{
+		display:none;
+		background:#EAEAEA;
+		width:100%;
+		}	
 		
 	.navmenu{
 		display:block;
@@ -269,6 +278,7 @@ nav ul ul li:hover> a{
 	
 	nav ul ul{
 		display:block;
+		padding-left:0px;
 		}
 		
 		
@@ -294,6 +304,30 @@ nav ul ul li:hover> a{
 	nav ul li{
 		padding-right:0px;
 		}
+	
+	
+	.pull {
+	display:block;
+	margin-left:8px;
+	}
+	
+	nav ul li{
+	padding-left:0px;	
+	}
+	
+	nav ul li ul li{
+	padding-top:0px;
+	padding-bottom:0px;
+	}
+	
+	nav ul li a{
+	margin-left:8px;	
+	}
+	
+	nav ul li ul li a{
+	margin-left:16px;	
+	}
+	
 	
 }
 
