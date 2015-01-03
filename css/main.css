@@ -95,19 +95,63 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+a{
+	text-decoration: none;
+	color:#585858;
+	text-transform:uppercase;
+	font-size:12px;
+	}
+	
+nav ul ul li a{
+	font-size:10px;
+	}
+
+ul{
+	padding:0 0 0 0;
+	}
+	
+li{
+	padding-left:3px;
+	}	
+
+nav ul{
+	list-style: none;
+	}
+	
+nav ul li{
+	display:inline-block;
+	padding-right:20px;
+	}
+
+nav ul ul{
+	display:none;
+	}
+	
+nav ul ul li{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	}
 
 
+nav ul ul li:hover{
+	background:#000;
+	width:135px;
+	padding-right:0px;
+    border-radius: 2px;
+	}
+	
 
-
-
-
-
-
-
-
-
-
-
+nav ul li:hover ul{
+	position:absolute;
+	display: block;
+	width:138px;
+	background:#E5E5E5;
+    border-radius: 2px;
+	}
+	
+nav ul ul li:hover> a{
+	color:#fff;
+	}
 
 
 
@@ -193,9 +237,13 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 40em)  {
+	/* 640px */
     /* Style adjustments for viewports that meet the condition */
-}
+	
+
+
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
