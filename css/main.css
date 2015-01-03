@@ -105,9 +105,17 @@ a{
 nav ul ul li a{
 	font-size:10px;
 	}
+	
+nav{
+	text-align:center;
+	width:100%;
+	background:#f4f4f4;
+	}
 
 ul{
 	padding:0 0 0 0;
+	margin-top:0px;
+	margin-bottom:0px;
 	}
 	
 li{
@@ -138,6 +146,7 @@ nav ul ul li:hover{
 	width:135px;
 	padding-right:0px;
     border-radius: 2px;
+	text-align:left;
 	}
 	
 
@@ -147,11 +156,16 @@ nav ul li:hover ul{
 	width:138px;
 	background:#E5E5E5;
     border-radius: 2px;
+	text-align:left;
 	}
 	
 nav ul ul li:hover> a{
 	color:#fff;
 	}
+	
+
+
+
 
 
 
@@ -237,11 +251,51 @@ nav ul ul li:hover> a{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 40em)  {
-	/* 640px */
+@media only screen and (max-width: 48em)  {
+	/* 768px */
     /* Style adjustments for viewports that meet the condition */
 	
-
+		
+	.navmenu{
+		display:block;
+		text-align:left;
+		}
+		
+		
+	nav ul li{
+		display:block;
+		padding-right:20px;
+		}
+	
+	nav ul ul{
+		display:block;
+		}
+		
+		
+	nav ul ul li:hover{
+		width:100%;
+		text-align:left;
+		background:#ffffff;
+		}
+	
+	nav ul ul li:hover> a{
+		color:#000000;
+		}	
+	
+	nav ul li:hover ul{
+		position:relative;
+		width:100%;
+		}
+		
+	nav ul ul li{
+		background:#FFFFFF;
+		}
+		
+	nav ul li{
+		padding-right:0px;
+		}
+	
+}
 
 
 
