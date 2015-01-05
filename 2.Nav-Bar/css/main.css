@@ -184,6 +184,10 @@ li{
 		.navmenu ul ul a{
 			font-size:10px;
 			}
+			
+		.logo{
+			float:left;
+			}	
 
 
 /* Mobile Nav =====================================*/
@@ -195,6 +199,7 @@ li{
 			min-height: 3em;
 			background:#f4f4f4;
 			position:fixed;
+			z-index:999;
 			}
 		
 		
@@ -203,6 +208,7 @@ li{
 			width: 100%;
 			min-width:320px;
 			margin: 0 auto;
+			z-index:9999;
 			}
 			
 			
@@ -245,11 +251,26 @@ li{
 		.mobilemenu ul ul a{
 			font-size:10px;
 			}
+			
+		.mobilemenu{
+			position:fixed;
+			margin-top:50px;
+			display:none;
+			}
+			
+		.mobilemenu ul ul{
+			display:none;
+			}			
 
-		.light{
-			background:#fcfcfc;
-		}
-
+		.mobilelogo{
+			float:left;
+			padding-left:1em;
+			}
+			
+		.pull{
+			float:right;
+			padding-right:1em;
+			}		
 
 /* ==========================================================================
    Helper classes
@@ -367,6 +388,10 @@ li{
 	display: none;
 	}
 	
+	.mobilemenu{
+	display: none;
+	}
+	
 	}
 
 }
@@ -379,6 +404,11 @@ li{
 	#mobilewrapper{
 	display: block;
 	}
+	
+	.mobilemenu{
+	display: block;
+	}
+	
 	
 	}
 
