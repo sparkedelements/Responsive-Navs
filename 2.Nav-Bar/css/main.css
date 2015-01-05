@@ -94,23 +94,161 @@ textarea {
 }
 
 /* ==========================================================================
+   Author's Reset
+   ========================================================================== */
+
+ul{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	}
+
+li{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	}
+
+
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 
 
 
+/* Main Nav =====================================*/
+
+		#navwrapper{
+			width:100%;
+			min-width:1px;
+			min-height: 3em;
+			background:#f4f4f4;
+			display: none;
+			}
+		
+		
+		#navcontainer{
+			min-height: 3em;
+			width: 768px;
+			min-width:1px;
+			margin: 0 auto;
+			}
+			
+		.navmenu{
+			top:80px;
+			}	
+			
+			
+		.navmenu ul{
+			float: right;
+			margin-top:.9em;
+			}	
+			
+		.navmenu ul li{
+			padding-left: 1em;
+			}
+			
+			
+		.navmenu ul li{
+			display: inline-block;
+			}
+			
+		.navmenu ul ul{
+			position: absolute;
+			display: block;
+			width: 100px;
+			text-align:left;
+			padding: 0 0 0 0;
+			margin-top: 4px;
+			padding-left: 0px;
+			margin-bottom: 0px;
+			display:none;
+			}	
+			
+		
+		.navmenu ul ul li{
+			padding-left: 0px;
+			}	
+			
+			
+		.navmenu ul li:hover ul{
+			display:block;
+			}
+		
+		.navmenu a{
+			text-decoration: none;
+			text-transform: uppercase;
+			color:#000;
+			font-size:12px;
+			}
+		
+		.navmenu ul ul a{
+			font-size:10px;
+			}
 
 
+/* Mobile Nav =====================================*/
 
 
+		#mobilewrapper{
+			width:100%;
+			min-width:1px;
+			min-height: 3em;
+			background:#f4f4f4;
+			position:fixed;
+			}
+		
+		
+		#mobilecontainer{
+			min-height: 3em;
+			width: 100%;
+			min-width:320px;
+			margin: 0 auto;
+			}
+			
+			
+			
+		.mobilemenu ul{
+			margin-top:12px;
+			margin-bottom:12px;
+			}	
+			
+		.mobilemenu ul li{
+			padding-left: 1em;
+			}
+			
+			
+	
+		.mobilemenu ul ul{
+		
+			display: block;
+			width: 100px;
+			text-align:left;
+			padding: 0 0 0 0;
+			margin-top: 4px;
+			padding-left: 0px;
+			margin-bottom: 8px;
+			}	
+			
+		
+		.mobilemenu ul ul li{
+			padding-left: 16px;
+			}	
+		
+		
+		.mobilemenu a{
+			text-decoration: none;
+			text-transform: uppercase;
+			color:#000;
+			font-size:12px;
+			}
+		
+		.mobilemenu ul ul a{
+			font-size:10px;
+			}
 
-
-
-
-
-
-
+		.light{
+			background:#fcfcfc;
+		}
 
 
 /* ==========================================================================
@@ -220,9 +358,29 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 769px) {
+   	#navwrapper{
+	display: block;
+	}
+	
+	#mobilewrapper{
+	display: none;
+	}
+	
+	}
+
 }
+
+@media only screen and (max-width: 768) {
+	#navwrapper{
+	display: none;
+	}
+	
+	#mobilewrapper{
+	display: block;
+	}
+	
+	}
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),

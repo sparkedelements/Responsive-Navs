@@ -1,6 +1,4 @@
 
-$(window).resize(function() {
-
 
 $(document).ready(function() {
     function doneResizing() {
@@ -34,8 +32,6 @@ $(document).ready(function() {
 
     doneResizing();
 });
-
-}).trigger("resize");
 
 
 
